@@ -1,0 +1,13 @@
+1.  stdomt.h is the header for fixed width integer types. In this case it's being used to hold exact width types
+3.  1, 4, 4, 2
+2.  They are the exact size of byte, dword, long, word respectively
+4.  BM
+5.  bfSize is the size of the bitmap file(in bytes) and biSize is the number the structure requires
+6.  If biHeight is negative it means the image is top-down. It is also not compressable 
+7.  biBitCount
+8.  fopen might return NULL if the input or output file do not exist or cannot be written to
+9.  The third argument in fread is the number of times it will read the file. 
+    Since we know the size of the BMP, it is only necessary to read it once
+10. It will return 3. This is becuase we have 3 pixels at 3 bytes each and the next multiple of 4 is 12, so 3*3 + 3 = 12
+11. fseek allows us to change the location of the file pointer, or where we start reading from in a file.
+12. SEEK_CUR is used to offset the points from the current location

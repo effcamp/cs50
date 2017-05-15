@@ -1,0 +1,7 @@
+0.  the longest word in the dictionary
+1.  this returns the resource usage measures
+2.  16
+3.  probably because it would have to create a copy of that variable to use, and that uses more resources
+4.  TODO
+5.  TODO
+6.  TODO
